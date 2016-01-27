@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style type="text/css">
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+.nums {
+  float: left;
+  overflow: hidden; }
+
+.num {
+  width: 45px;
+  height: 61px;
+  background: url(http://jsrun.it/assets/b/m/5/x/bm5xe.png) 0 0 repeat-y;
+  float: left; }
+
+#clock {
+  position: absolute;
+  width: 270px;
+  height: 61px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden; }
+
+@-webkit-keyframes countUp10 {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -610px; } }
+
+@-webkit-keyframes countUp6 {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -366px; } }
+
+@-webkit-keyframes countUp24-2 {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -1464px; } }
+
+@-webkit-keyframes countUp24-1 {
+  0% {
+    background-position: 0px 0px; }
+
+  41.666666665% {
+    background-position: 0px 0px; }
+
+  41.666666666% {
+    background-position: 0px -61px; }
+
+  83.333333332% {
+    background-position: 0px -61px; }
+
+  83.333333333% {
+    background-position: 0px -122px; }
+
+  100% {
+    background-position: 0px -122px; } }
+body {
+  margin: 0;
+  background: #000;
+}
+</style>
+
+<div id="clock">
+    <div id="hours" class="nums">
+        <div id="hours1" class="num"></div>
+        <div id="hours2" class="num"></div>
+    </div>
+
+    <div id="minutes" class="nums">
+        <div id="minutes1" class="num"></div>
+        <div id="minutes2" class="num"></div>
+    </div>
+
+    <div id="seconds" class="nums">
+        <div id="seconds1" class="num"></div>
+        <div id="seconds2" class="num"></div>
+    </div>
+</div>
+<script src="clock.js"></script>
+
+</body>
+</html>
+
