@@ -2039,6 +2039,7 @@ window.ape = function(canvas){
   camera.lookAt(new THREE.Vector3(0, 0, 0));
   light.position.set(1, 2, 3);
   scene.add(light);
+  controls.autoRotate = true;
 
   getApeMesh(function(mesh){
     scene.add(mesh);
